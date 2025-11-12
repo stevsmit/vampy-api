@@ -18,16 +18,13 @@ The following procedure shows you how to add the profile for Edward Cullen and a
 2. Run the following `cURL` command using the `POST` method.
 This command creates the core entry to the `/vampires` resource.
 
-    ```bash
-    curl -X POST \
-    -H "Content-Type: application/json" \
-    -d '{
-        "name": "Edward Cullen", 
-        "canFly": false, 
+    <div class="highlight"><pre><code class="language-bash">
+    curl -X POST -H "Content-Type: application/json" -d '{
+        "name": "Edward Cullen",
+        "canFly": false,
         "batMode": false
-    }' \
-    http://localhost:3000/vampires
-    ```
+    }' http://localhost:3000/vampires
+    </code></pre></div>
 
     The API returns the new vampire object, which includes a unique `id` assigned by the server. For example:
 
@@ -40,10 +37,37 @@ This command creates the core entry to the `/vampires` resource.
     }
     ```
 
-3. Run the following `cURL` command using the `POST` method to add 
-the power *Enhanced Speed* to the `/specialPowers`. Include the `vampireId` generated from Step 2.
+3. Run the following `cURL` command using the `POST` method to add
+the movie *Twilight* to the `/media` resource. Include the `vampireId` generated from Step 2.
 
-    ```bash
+    <div class="highlight"><pre><code class="language-bash">
+    curl -X POST \
+    -H "Content-Type: application/json" \
+    -d '{
+        "type": "film", 
+        "title": "Twilight",
+        "year": 2008,
+        "vampireId": 8
+    }' \
+    http://localhost:3000/media
+    </code></pre></div>
+
+    The API returns the new power object with its own unique `id`. For example:
+
+    ```json
+    {
+    "type": "film",
+    "title": "Twilight",
+    "year": 2008,
+    "vampireId": 8,
+    "id": 5
+    }
+    ```
+
+4. Run the following `cURL` command using the `POST` method to add
+the power *Enhanced Speed* to the `/specialPowers` resource. Include the `vampireId` generated from Step 2.
+
+    <div class="highlight"><pre><code class="language-bash">
     curl -X POST \
     -H "Content-Type: application/json" \
     -d '{
@@ -51,7 +75,7 @@ the power *Enhanced Speed* to the `/specialPowers`. Include the `vampireId` gene
         "vampireId": 8
     }' \
     http://localhost:3000/specialPowers
-    ```
+    </code></pre></div>
 
     The API returns the new power object with its own unique `id`. For example:
 

@@ -1,0 +1,28 @@
+site_name: The Vampire Tracker API
+repo_name: dracula/mkdocs
+repo_url: https://github.com/dracula/mkdocs
+site_url: https://draculatheme.com/mkdocs
+copyright: Fernando Celmer
+
+nav:
+    - Home: index.md
+    - Getting Started: quickstart/get-started.md
+    - Tutorials:
+      - tutorials/add-vampire-tutorial.md
+    - Reference:
+      - reference/operations.md
+      - nav/development/release-notes.md
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - admonition
+  - codehilite
+
+theme:
+  name: dracula
+  logo: assets/img/dracula.png
+  favicon: assets/favicon.ico
+  # highlight_js: highlight.min.js
+  # highlight_css: atom-one-dark.min.css
+  # highlight_css: github.min.css
