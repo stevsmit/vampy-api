@@ -1,144 +1,134 @@
 {
-  "vampires": [
-    {
-      "name": "Selene",
-      "canFly": false,
-      "batMode": false,
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Peter Loew",
-      "canFly": false,
-      "batMode": false
-    },
-    {
-      "id": 3,
-      "name": "David",
-      "canFly": true,
-      "batMode": false
-    },
-    {
-      "id": 4,
-      "name": "Strigoi",
-      "canFly": true,
-      "batMode": true
-    },
-    {
-      "id": 5,
-      "name": "Count Dracula",
-      "canFly": true,
-      "batMode": true
-    },
-    {
-      "id": 6,
-      "name": "The Count",
-      "canFly": true,
-      "batMode": true
-    },
-    {
-      "id": 7,
-      "name": "Blade",
-      "canFly": false,
-      "batMode": false
-    },
-    {
-      "name": "Count Orlok",
-      "canFly": false,
-      "batMode": true,
-      "id": 8
-    },
-    {
-      "name": "Edward Cullent",
-      "canFly": false,
-      "batMode": false,
-      "id": 9
-    }
-  ],
-  "media": [
-    {
-      "id": 1,
-      "type": "movie",
-      "title": "Underworld",
-      "year": 2003,
-      "vampireId": 1
-    },
-    {
-      "id": 1,
-      "type": "movie",
-      "title": "Vampire's Kiss",
-      "year": 1988,
-      "vampireId": 2
-    },
-    {
-      "id": 1,
-      "type": "movie",
-      "title": "The Lost Boys",
-      "year": 1987,
-      "vampireId": 3
-    },
-    {
-      "id": 1,
-      "type": "movie",
-      "title": "Blade",
-      "year": 1998,
-      "vampireId": 7
-    },
-    {
-      "id": 2,
-      "type": "television",
-      "title": "Sesame Street",
-      "year": 1972,
-      "vampireId": 6
-    },
-    {
-      "id": 4,
-      "type": "lore",
-      "title": "The case of Petar Blagojević",
-      "year": 1725,
-      "vampireId": 4
-    }
-  ],
-  "specialPowers": [
-    {
-      "id": 1,
-      "power": "Day-walking",
-      "vampireId": 7
-    },
-    {
-      "id": 2,
-      "power": "Enhanced Marksmanship",
-      "vampireId": 1
-    },
-    {
-      "id": 3,
-      "power": "Being a vampire",
-      "vampireId": 2
-    },
-    {
-      "id": 4,
-      "power": "Mind Control",
-      "vampireId": 3
-    },
-    {
-      "id": 5,
-      "power": "Invisibility",
-      "vampireId": 4
-    },
-    {
-      "id": 6,
-      "power": "Shape-shifting",
-      "vampireId": 5
-    },
-    {
-      "id": 7,
-      "power": "Counting",
-      "vampireId": 6
-    },
-    {
-      "power": "Enhanced Speed",
-      "vampireId": 9,
-      "id": 8
-    }
-  ]
+    "vampires": [
+        {
+            "id": 1,
+            "name": "Selene",
+            "canFly": false,
+            "batMode": false
+        },
+        {
+            "id": 2,
+            "name": "Peter Loew",
+            "canFly": false,
+            "batMode": false
+        },
+        {
+            "id": 3,
+            "name": "David",
+            "canFly": true,
+            "batMode": false
+        },
+        {
+            "id": 4,
+            "name": "Strigoi",
+            "canFly": true,
+            "batMode": true
+        },
+        {
+            "id": 5,
+            "name": "Count Dracula",
+            "canFly": true,
+            "batMode": true
+        },
+        {
+            "id": 6,
+            "name": "The Count",
+            "canFly": true,
+            "batMode": true
+        },
+        {
+            "id": 7,
+            "name": "Blade",
+            "canFly": false,
+            "batMode": false
+        }
+    ],
+    "media": [
+        {
+            "id": 1,
+            "type": "movie",
+            "title": "Underworld",
+            "year": 2003,
+            "vampireId": 1
+        },
+        {
+            "id": 1,
+            "type": "movie",
+            "title": "Vampire's Kiss",
+            "year": 1988,
+            "vampireId": 2
+        },
+        {
+            "id": 1,
+            "type": "movie",
+            "title": "The Lost Boys",
+            "year": 1987,
+            "vampireId": 3
+        },
+        {
+            "id": 1,
+            "type": "movie",
+            "title": "Blade",
+            "year": 1998,
+            "vampireId": 7
+        },
+        {
+            "id": 2,
+            "type": "television",
+            "title": "Sesame Street",
+            "year": 1972,
+            "vampireId": 6
+        },
+        {
+            "id": 3,
+            "type": "book",
+            "title": "Dracula",
+            "year": 1897,
+            "vampireId": 5
+        },
+        {
+            "id": 4,
+            "type": "lore",
+            "title": "The case of Petar Blagojević",
+            "year": 1725,
+            "vampireId": 4
+        }
+    ],
+    "specialPowers": [
+        {
+            "id": 1,
+            "power": "Day-walking",
+            "vampireId": 7
+        },
+        {
+            "id": 2,
+            "power": "Enhanced Marksmanship",
+            "vampireId": 1
+        },
+        {
+            "id": 3,
+            "power": "Being a vampire",
+            "vampireId": 2
+        },
+        {
+            "id": 4,
+            "power": "Mind Control",
+            "vampireId": 3
+        },
+        {
+            "id": 5,
+            "power": "Invisibility",
+            "vampireId": 4
+        },
+        {
+            "id": 6,
+            "power": "Shape-shifting",
+            "vampireId": 5
+        },
+        {
+            "id": 7,
+            "power": "Counting",
+            "vampireId": 6
+        }
+    ]
 }
