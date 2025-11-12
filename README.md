@@ -1,1 +1,0 @@
-# vampy-api
