@@ -1,12 +1,12 @@
 # API reference: REST operators
 
-The Vampy API supports standard RESTful operations (Create, Read, Update, Delete) on all three primary resources: `/vampires`, `/media`, and `/specialPowers`. All requests and responses are handled via JSON. 
+The Vampy API supports standard RESTful operations (Create, Read, Update, Delete) on all three primary resources: `/vampires`, `/media`, and `/specialPowers`. All requests and responses are handled via JSON.
 
 The following sections provide an overview of each operation.
 
 ## Read operations (GET)
 
-Use `GET` to retrieve Vampy API resources. 
+Use `GET` to retrieve Vampy API resources.
 
 | Operation | Endpoint example | Description |
 |---------|------|-------------|
@@ -33,7 +33,6 @@ Use `GET` to retrieve Vampy API resources.
   }
   // ... more vampires
 ]
-
 ```
 
 ## Create operations (POST)
@@ -54,6 +53,7 @@ $ curl -X POST \
   -d '{"name": "Count Orlok", "canFly": false, "batMode": true}' \
   http://localhost:3000/vampires
 ```
+
 **Example response if successful:**
 
 ```json
@@ -97,6 +97,7 @@ $ curl -X PUT \
   -d '{"name": "Selene", "canFly": false, "batMode": false, "id": 1}' \
   http://localhost:3000/vampires/1
 ```
+
 **Example response if successful:**
 
 ```json
