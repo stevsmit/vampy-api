@@ -15,6 +15,14 @@ Use `GET` to retrieve Vampy API resources.
 |Filter  | `GET /vampires?canFly=true` | Retrieve all vampires that can fly. |
 |Relational data  | `GET /specialPowers?_expand=vampire` | Retrieve all special powers, embedding the associated vampire object with the response for each power. |
 
+**Example request (`GET /vampires`):**
+
+```bash
+curl -X GET \
+  -H "Content-Type: application/json" \
+  http://localhost:3000/vampires
+```
+
 **Example response (`GET /vampires`):**
 
 ```json
@@ -48,7 +56,7 @@ Use `POST` to create new resources. The API automatically assigns a unique `id` 
 **Example request (`POST /vampires`):**
 
 ```bash
-$ curl -X POST \
+curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"name": "Count Orlok", "canFly": false, "batMode": true}' \
   http://localhost:3000/vampires
@@ -72,7 +80,7 @@ Use `PATCH` to update one or more fields of an existing resource without alterin
 **Example request (`PATCH /vampires/`):**
 
 ```bash
-$ curl -X PATCH \
+curl -X PATCH \
   -H "Content-Type: application/json" \
   -d '{"canFly": true}' \
   http://localhost:3000/vampires/1
@@ -92,7 +100,7 @@ $ curl -X PATCH \
 Use `PUT` to completely replace an existing resource with a new object. You must include all fields of the payload. Missing fields are set to `null` or default values.
 
 ```bash
-$ curl -X PUT \
+curl -X PUT \
   -H "Content-Type: application/json" \
   -d '{"name": "Selene", "canFly": false, "batMode": false, "id": 1}' \
   http://localhost:3000/vampires/1
@@ -116,7 +124,7 @@ Use `DELETE` to remove a resource from the database by using its `id`.
 **Example Request (DELETE /media/3):**
 
 ```bash
-$ curl -X DELETE http://localhost:3000/media/3
+curl -X DELETE http://localhost:3000/media/3
 ```
 
 **Example response if successful:**
