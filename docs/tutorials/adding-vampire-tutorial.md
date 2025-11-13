@@ -1,15 +1,14 @@
 # Tutorial: Creating a complete vampire profile
 
-This tutorial shows you how to use the `POST` method to create
-a new vampire entity to the database.
+This tutorial shows you how to use the `POST` method to add
+a new vampire entity to the database, along with their
+media appearance and special power.
 
-## Description and goal
-
-The following procedure shows you how to add the profile for Edward Cullen and assign him the power of *Enhanced Speed*.
+This tutorial should take approximately 20 minutes.
 
 ## Prerequisites
 
-* Confirm that the `json-server` app is running with the `vampy_db.json` database.
+* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](/docs/quickstart/getting-started.md).
 
 ## Procedure
 

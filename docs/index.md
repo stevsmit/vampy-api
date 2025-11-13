@@ -24,9 +24,10 @@ This website is organized into three primary sections that support developers du
 
 | Section | Purpose | Topics covered |
 |---------|------|-------------|
-|Quick start  | Used to get up and running in under five minutes.  | Installation, First API call using GET.  |
+|Getting started  | Used to get up and running in under five minutes.  | Installation, First API call using GET.  |
 |Reference  | Provides comprehensive detail on all resources and operations  | Resources schema, endpoints, methods, filtering, and sorting.  |
 |Tutorials  | Provides step-by-step instructions for common tasks related to the Vampy API | Add new vampire profiles, filtering vampires by power. |
+
 
 ## Resource references
 
