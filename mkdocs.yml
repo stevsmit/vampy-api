@@ -6,12 +6,11 @@ copyright: Fernando Celmer
 
 nav:
     - Home: index.md
-    - Getting Started: quickstart/get-started.md
+    - Getting started with the Vampy API: quickstart/getting-started.md
     - Tutorials:
-      - tutorials/add-vampire-tutorial.md
+      - tutorials/adding-vampire-tutorial.md
     - Reference:
       - reference/operations.md
-      - nav/development/release-notes.md
 
 markdown_extensions:
   - pymdownx.superfences

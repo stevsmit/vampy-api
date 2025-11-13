@@ -1,0 +1,128 @@
+# Becoming _familiar_: Getting started with the Vampy API
+
+This tutorial guides new users through the essential steps required to
+run the Vampire Tracker API (Vampy API) locally using `json-server`.
+By the end of this tutorial, you will have the REST API running
+and accessible at `http://localhost:3000`.
+
+Expect this preparation to take about 20 minutes to complete.
+
+## Prerequisites
+
+Before starting, ensure that you meet the following prerequisites:
+
+* [`Node.js`](https://nodejs.org/en/download), which is used for running JavaScript packages.
+* [`json-server`](https://www.npmjs.com/package/json-server/v/0.17.4), which is used to host our API endpoints from the JSON database file.
+* [`git` command line tool](https://docs.github.com/en/get-started/git-basics/set-up-git), which is used to clone the repository.
+
+## Getting the project files
+
+The following procedure shows you how to clone the Github repository.
+
+1. Open a terminal. Ensure that you are in the `$HOME` directory by running the following command:
+
+    <div class="highlight"><pre><code class="language-bash">
+    cd $HOME
+    </code></pre></div>
+
+2. Clone the project by running the following command:
+
+    <div class="highlight"><pre><code class="language-bash">
+    git clone https://github.com/stevsmit/vampy-api.git
+    </code></pre></div>
+
+## Staring the Vampy API server
+
+The following procedure shows you how to start the Vampy API data.
+
+1. Navigate into the `vampy-api/api` directory by running the following command:
+
+    <div class="highlight"><pre><code class="language-bash">
+    cd vampy-api/api
+    </code></pre></div>
+
+2. Start the JSON server by running the following command:
+
+    <div class="highlight"><pre><code class="language-bash">
+    json-server vampy_db.json
+    </code></pre></div>
+
+    Your terminal will show confirmation messages that the server is running and the available resources:
+
+    ```json
+    \{^_^}/ hi!
+
+    Loading vampy_db.json
+    Done
+
+    Resources
+    http://localhost:3000/vampires
+    http://localhost:3000/media
+    http://localhost:3000/specialPowers
+
+    Home
+    http://localhost:3000
+
+    Type s + enter at any time to create a snapshot of the database
+    ```
+
+## Making a test call to the Vampy API server
+
+The following procedure shows you how to make a test call to the Vampy API server.
+
+1. Open a different terminal window, or a new terminal.
+
+2. Retrieve information for the `/vampire` resource by entering the following command. By default, running the `curl` command automatically retrieves resources with the `GET`.
+
+    <div class="highlight"><pre><code class="language-bash">
+    curl http://localhost:3000/vampires
+    </code></pre></div>
+
+    If the service is running, information about the `/vampires` resource is returned. For example:
+
+    ```json
+    [
+    {
+        "id": 1,
+        "name": "Selene",
+        "canFly": false,
+        "batMode": false
+    },
+    {
+        "id": 2,
+        "name": "Peter Loew",
+        "canFly": false,
+        "batMode": false
+    },
+    {
+        "id": 3,
+        "name": "David",
+        "canFly": true,
+        "batMode": false
+    },
+    {
+        "id": 4,
+        "name": "Strigoi",
+        "canFly": true,
+        "batMode": true
+    },
+    {
+        "id": 5,
+        "name": "Count Dracula",
+        "canFly": true,
+        "batMode": true
+    },
+    {
+        "id": 6,
+        "name": "The Count",
+        "canFly": true,
+        "batMode": true
+    },
+    {
+        "id": 7,
+        "name": "Blade",
+        "canFly": false,
+        "batMode": false
+    },
+    ]
+    ```
