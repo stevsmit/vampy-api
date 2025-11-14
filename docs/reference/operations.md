@@ -58,7 +58,7 @@ Use `POST` to create new resources. The API automatically assigns a unique `id` 
 ```bash
 curl -X POST \
   -H "Content-Type: application/json" \
-  -d '{"name": "Count Orlok", "canFly": false, "batMode": true}' \
+  -d '{"name": "Count Orlok", "canFly": false, "batMode": false}' \
   http://localhost:3000/vampires
 ```
 
@@ -68,7 +68,7 @@ curl -X POST \
 {
   "name": "Count Orlok",
   "canFly": false,
-  "batMode": true,
+  "batMode": false,
   "id": 8
 }
 ```

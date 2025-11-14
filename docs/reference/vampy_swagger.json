@@ -211,7 +211,7 @@ components:
       properties:
         name:
           type: string
-          example: Dr. Acula
+          example: Count Orlok
         canFly:
           type: boolean
           example: false
