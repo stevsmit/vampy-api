@@ -1,6 +1,8 @@
-# API reference: REST operators
+# API reference: REST operations
 
-The Vampy API supports standard RESTful operations (Create, Read, Update, Delete) on all three primary resources: `/vampires`, `/media`, and `/specialPowers`. All requests and responses are handled via JSON.
+The Vampy API supports standard RESTful operations (Create, Read, Update, Delete)
+on all three primary resources: `/vampires`, `/media`, and `/specialPowers`.
+All requests and responses are handled via JSON.
 
 The following sections provide an overview of each operation.
 
@@ -132,3 +134,5 @@ curl -X DELETE http://localhost:3000/media/3
 ```json
 {}
 ```
+
+## Next steps

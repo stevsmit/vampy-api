@@ -12,7 +12,13 @@ nav:
       - Adding a Vampire: tutorials/adding-vampire-tutorial.md
 
   - Reference:
-      - Vampires: reference/vampires.md
+      - Operations: reference/operations.md
+      - Vampires:
+          - About the /vampires resource: reference/about-vampires.md
+          - GET /vampires operations: reference/get-vampires-operations.md
+          - POST /vampires operations: reference/post-vampires-operations.md
+          - PATCH /vampires operations: reference/patch-vampires-operations.md
+          - DELETE /vampires operations: reference/delete-vampires-operations.md
       - Media: reference/media.md
       - Special Powers: reference/specialpowers.md
       - Vampy Swagger: reference/vampy-api.md
