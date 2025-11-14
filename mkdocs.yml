@@ -13,12 +13,17 @@ nav:
 
   - Reference:
       - Operations: reference/operations.md
-      - Vampires:
-          - About the /vampires resource: reference/about-vampires.md
-          - GET /vampires operations: reference/get-vampires-operations.md
-          - POST /vampires operations: reference/post-vampires-operations.md
-          - PATCH /vampires operations: reference/patch-vampires-operations.md
-          - DELETE /vampires operations: reference/delete-vampires-operations.md
+      - The /vampires resource:
+          - About the /vampires resource:
+              - /vampires resource overview: reference/about-vampires.md
+              - GET /vampires: reference/get-vampires-operations.md
+              - POST /vampires: reference/post-vampires-operations.md
+              - PATCH /vampires: reference/patch-vampires-operations.md
+              - PUT /vampires: reference/put-vampires-operations.md
+              - DELETE /vampires: reference/delete-vampires-operations.md
+      - The /media resource:
+          - About the /media resource:
+              - GET /media: reference/delete-vampires.operations.md
       - Media: reference/media.md
       - Special Powers: reference/specialpowers.md
       - Vampy Swagger: reference/vampy-api.md
