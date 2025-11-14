@@ -75,49 +75,6 @@ curl -X POST \
 }
 ```
 
-## Update operations (PUT/PATCH)
-
-Use `PATCH` to update one or more fields of an existing resource without altering other fields.
-
-**Example request (`PATCH /vampires/`):**
-
-```bash
-curl -X PATCH \
-  -H "Content-Type: application/json" \
-  -d '{"canFly": true}' \
-  http://localhost:3000/vampires/1
-```
-
-**Example response if successful:**
-
-```json
-{
-  "id": 1,
-  "name": "Selene",
-  "canFly": true,
-  "batMode": false
-}
-```
-
-Use `PUT` to completely replace an existing resource with a new object. You must include all fields of the payload. Missing fields are set to `null` or default values.
-
-```bash
-curl -X PUT \
-  -H "Content-Type: application/json" \
-  -d '{"name": "Selene", "canFly": false, "batMode": false, "id": 1}' \
-  http://localhost:3000/vampires/1
-```
-
-**Example response if successful:**
-
-```json
-{
-  "name": "Selene",
-  "canFly": false,
-  "batMode": false,
-  "id": 1
-}
-```
 
 ## Delete operations (DELETE)
 

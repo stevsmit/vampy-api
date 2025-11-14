@@ -1,15 +1,17 @@
-# POST /vampires references
+# PUT /vampires/{id} references
 
-Use the `POST` method to create a new `/vampire` resource.
+Use the `PUT` method to replace an existing vampire with a new object.
+All fields must be included in the request. Missing fields will be set to null or default values.
 
-## POST /vampires
+## PUT /vampires/{id}
 
-Create a new vampire profile.
+Update the entire vampire profile.
 
 ### Parameters
 
 | Parameter | Description | Type |
 |---------|------|---------------|
+| **id** (_required_) | Unique ID of the vampire | integer |
 | **name** (_required_) | Friendly name of the vampire | string |
 | **canFly** (_required_) | Whether the vampire can fly | boolean |
 | **batMode** (_required_) | Whether the vampire can transform into a bat |boolean |
@@ -20,12 +22,13 @@ Create a new vampire profile.
 |---------|------|---------------|
 | 201 | Successful creation | Vampire object |
 | 400 | Bad request | ApiError |
+| 404 | Vampire not found | ApiError |
 
 ### Example command
 
 ```bash
-curl -X POST \
+curl -X PUT \
   -H "Content-Type: application/json" \
-  -d '{"name": "Count Orlok", "canFly": false, "batMode": false}' \
-  http://{base_url}/vampires
+  -d '{"name": "Selene", "canFly": false, "batMode": false, "id": 1}' \
+  http://{base_url}/vampires/1
 ```
