@@ -89,5 +89,30 @@ Retrieve a single vampire profile with its special powers.
 ### Example command
 
 ```bash
-curl -X GET -H "Content-Type: application/json" "http://{base_url}/vampires/1?_embed=specialPowers"
+curl -X GET -H "Content-Type: application/json" http://{base_url}/vampires/1?_embed=specialPowers
+```
+
+## GET /vampires/{id}?_embed=media
+
+Retrieve a single vampire profile and embed all associated media appearances in the response.
+
+### Parameters
+
+| Parameter | Description | Type |
+|---------|------|---------------|
+| `id` _(required)_ | Unique ID of the vampire | integer |
+
+### Responses
+
+| HTTP Code | Description | Schema |
+|---------|------|---------------|
+| 200 | Vampire profile with embedded special powers |Vampire object with `specialPowers` array |
+| 404 | Vampire not found | ApiError |
+
+### Example command
+
+```bash
+curl -X GET \
+  -H "Content-Type: application/json" \
+  "http://{base_url}/vampires/1?_embed=media"
 ```

@@ -22,6 +22,7 @@ You can create, read, update, or delete vampire profiles using the corresponding
 |`GET /vampires/{id}` |Retrieve a single vampire profile by its `id`. |
 |`GET /vampires?canFly={true/false}` |Retrieve all vampires that can or cannot fly. |
 |`GET /vampires/{id}?_embed=specialPowers` |Retrieve a vampire profile along with its assigned special powers. |
+|`GET /vampires/{id}?_embed=media` | Retrieve a single vampire profile and embed all associated media appearances in the response. |
 |`POST /vampires` |Create a new vampire profile. Requires `name`, `canFly`, and `batMode`. |
 |`PATCH /vampires/{id}` |Update one or more fields on an existing vampire. |
 |`PUT /vampires/{id}` |Replace an existing vampire with a new object (all fields required). |
