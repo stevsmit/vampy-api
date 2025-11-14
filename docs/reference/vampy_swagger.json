@@ -5,9 +5,11 @@ info:
   description: >
     A RESTful service providing canonical data on notable vampires across history,
     media, and folklore, along with their linked powers and appearances.
+
 servers:
   - url: http://localhost:3000
     description: Local JSON Server endpoint for development and testing.
+
 tags:
   - name: Vampires
     description: Core operations for managing vampire profiles.
@@ -17,6 +19,10 @@ tags:
     description: Managing unique abilities possessed by individual vampires.
 
 paths:
+
+  #############################################
+  # VAMPIRES
+  #############################################
   /vampires:
     get:
       tags:
@@ -32,6 +38,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Vampire'
+
     post:
       tags:
         - Vampires
@@ -61,10 +68,11 @@ paths:
         schema:
           type: integer
         description: The unique ID of the vampire.
+
     get:
       tags:
         - Vampires
-      summary: Get profile by ID
+      summary: Get a vampire profile by ID
       description: Returns a single vampire profile.
       responses:
         '200':
@@ -75,10 +83,11 @@ paths:
                 $ref: '#/components/schemas/Vampire'
         '404':
           description: Vampire not found.
+
     patch:
       tags:
         - Vampires
-      summary: Update (partial) a vampire profile
+      summary: Partially update a vampire profile
       description: Updates one or more fields on an existing vampire.
       requestBody:
         content:
@@ -90,30 +99,54 @@ paths:
           description: Profile successfully updated.
         '404':
           description: Vampire not found.
+
+    put:
+      tags:
+        - Vampires
+      summary: Replace a vampire profile
+      description: Fully replaces the vampire object. All fields must be supplied.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VampireCreation'
+      responses:
+        '200':
+          description: Profile successfully replaced.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Vampire'
+        '404':
+          description: Vampire not found.
+
     delete:
       tags:
         - Vampires
       summary: Delete a vampire profile
-      description: Permanently removes a vampire profile from the database.
+      description: Permanently removes the vampire profile.
       responses:
         '200':
           description: Profile successfully deleted.
         '404':
           description: Vampire not found.
 
+  #############################################
+  # MEDIA
+  #############################################
   /media:
     get:
       tags:
         - Media Appearances
       summary: List all media appearances
-      description: Returns a list of all recorded media appearances. Can be filtered by vampireId.
+      description: Returns all recorded media appearances. Supports filtering by vampireId.
       parameters:
         - name: vampireId
           in: query
-          required: false
           schema:
             type: integer
-          description: Filter media by the ID of the associated vampire.
+          required: false
+          description: Filter media by associated vampire.
       responses:
         '200':
           description: A list of media appearances.
@@ -123,6 +156,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Media'
+
     post:
       tags:
         - Media Appearances
@@ -136,23 +170,74 @@ paths:
               $ref: '#/components/schemas/MediaCreation'
       responses:
         '201':
-          description: Media appearance successfully linked.
+          description: Media appearance successfully added.
         '400':
           description: Invalid request payload.
 
+  /media/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+
+    patch:
+      tags:
+        - Media Appearances
+      summary: Partially update a media record
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MediaCreation'
+      responses:
+        '200':
+          description: Media updated.
+        '404':
+          description: Media entry not found.
+
+    put:
+      tags:
+        - Media Appearances
+      summary: Fully replace a media record
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MediaCreation'
+      responses:
+        '200':
+          description: Media replaced.
+        '404':
+          description: Media entry not found.
+
+    delete:
+      tags:
+        - Media Appearances
+      summary: Delete a media record
+      responses:
+        '200':
+          description: Media deleted.
+        '404':
+          description: Media entry not found.
+
+  #############################################
+  # SPECIAL POWERS
+  #############################################
   /specialPowers:
     get:
       tags:
         - Special Powers
       summary: List all special powers
-      description: Returns a list of all special powers recorded. Can be filtered by vampireId.
+      description: Returns all special powers. Supports optional filtering by vampireId.
       parameters:
         - name: vampireId
           in: query
-          required: false
           schema:
             type: integer
-          description: Filter powers by the ID of the associated vampire.
+          required: false
+          description: Filter powers by vampire ID.
       responses:
         '200':
           description: A list of special powers.
@@ -167,7 +252,7 @@ paths:
       tags:
         - Special Powers
       summary: Assign a new special power
-      description: Assigns a unique power to a specific vampire.
+      description: Assigns a power to a specific vampire.
       requestBody:
         required: true
         content:
@@ -180,28 +265,78 @@ paths:
         '400':
           description: Invalid request payload.
 
+  /specialPowers/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+
+    patch:
+      tags:
+        - Special Powers
+      summary: Partially update a special power
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SpecialPowerCreation'
+      responses:
+        '200':
+          description: Special power updated.
+        '404':
+          description: Special power not found.
+
+    put:
+      tags:
+        - Special Powers
+      summary: Fully replace a special power
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SpecialPowerCreation'
+      responses:
+        '200':
+          description: Special power replaced.
+        '404':
+          description: Special power not found.
+
+    delete:
+      tags:
+        - Special Powers
+      summary: Delete a special power
+      responses:
+        '200':
+          description: Special power deleted.
+        '404':
+          description: Special power not found.
+
+
 components:
   schemas:
+
+    #############################################
+    # VAMPIRE SCHEMAS
+    #############################################
     Vampire:
       type: object
       properties:
         id:
           type: integer
           readOnly: true
-          description: Unique ID assigned by the server.
           example: 8
         name:
           type: string
-          description: The vampire's name (e.g., Count Orlok).
-          example: Count Orlok
+          example: "Count Orlok"
         canFly:
           type: boolean
-          description: True if the vampire can fly in human form.
           example: false
         batMode:
           type: boolean
-          description: True if the vampire can transform into a bat.
           example: true
+
     VampireCreation:
       type: object
       required:
@@ -211,35 +346,34 @@ components:
       properties:
         name:
           type: string
-          example: Count Orlok
         canFly:
           type: boolean
-          example: false
         batMode:
           type: boolean
-          example: false
+
+    #############################################
+    # MEDIA SCHEMAS
+    #############################################
     Media:
       type: object
       properties:
         id:
           type: integer
           readOnly: true
-          example: 5
+          example: 4
         type:
           type: string
-          description: The medium (film, book, lore, etc.).
-          example: film
+          example: "movie"
         title:
           type: string
-          example: Nosferatu, a Symphony of Horror
+          example: "Underworld"
         year:
           type: integer
-          description: Year of release or discovery.
-          example: 1922
+          example: 2003
         vampireId:
           type: integer
-          description: Foreign key linking to the Vampire resource.
-          example: 8
+          example: 1
+
     MediaCreation:
       type: object
       required:
@@ -249,31 +383,30 @@ components:
       properties:
         type:
           type: string
-          example: comic
         title:
           type: string
-          example: The Blood Comic
         year:
           type: integer
-          example: 1995
         vampireId:
           type: integer
-          example: 8
+
+    #############################################
+    # SPECIAL POWERS SCHEMAS
+    #############################################
     SpecialPower:
       type: object
       properties:
         id:
           type: integer
           readOnly: true
-          example: 9
+          example: 2
         power:
           type: string
-          description: The name of the special ability.
-          example: Shadow Manipulation
+          example: "Mind Control"
         vampireId:
           type: integer
-          description: Foreign key linking to the Vampire resource.
-          example: 8
+          example: 3
+
     SpecialPowerCreation:
       type: object
       required:
@@ -282,7 +415,5 @@ components:
       properties:
         power:
           type: string
-          example: Hypnotic Gaze
         vampireId:
           type: integer
-          example: 8

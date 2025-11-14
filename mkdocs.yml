@@ -23,8 +23,12 @@ nav:
               - DELETE /vampires: reference/delete-vampires-operations.md
       - The /media resource:
           - About the /media resource:
-              - GET /media: reference/delete-vampires.operations.md
-      - Media: reference/media.md
+              - /media resource overview: reference/about-media.md
+              - GET /media: reference/get-media-operations.md
+              - POST /vampires: reference/post-media-operations.md
+              - PATCH /vampires: reference/patch-media-operations.md
+              - PUT /vampires: reference/put-media-operations.md
+              - DELETE /vampires: reference/delete-media-operations.md
       - Special Powers: reference/specialpowers.md
       - Vampy Swagger: reference/vampy-api.md
 

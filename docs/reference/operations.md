@@ -75,7 +75,6 @@ curl -X POST \
 }
 ```
 
-
 ## Delete operations (DELETE)
 
 Use `DELETE` to remove a resource from the database by using its `id`.
