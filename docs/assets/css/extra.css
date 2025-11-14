@@ -1,0 +1,12 @@
+/* Enlarge the header logo */
+.md-header-nav__title img,
+.md-header-nav__logo img {
+    height: 60px;    /* adjust size */
+    width: auto;
+}
+
+/* Optional: enlarge the sidebar logo too */
+.md-sidebar--primary .md-logo img {
+    height: 80px;   /* adjust as needed */
+    width: auto;
+}
