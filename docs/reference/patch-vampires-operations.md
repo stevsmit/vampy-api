@@ -12,6 +12,11 @@ Update the vampire profile.
 | Parameter | Description | Type |
 |---------|------|---------------|
 | **id** (_required_) | Unique ID of the vampire | integer |
+
+### Required request body fields
+
+| Field | Description | Type |
+|---------|------|---------------|
 | **name** (_optional_) | Friendly name of the vampire | string |
 | **canFly** (_optional_) | Whether the vampire can fly | boolean |
 | **batMode** (_optional_) | Whether the vampire can transform into a bat |boolean |

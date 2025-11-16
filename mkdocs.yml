@@ -29,7 +29,14 @@ nav:
               - PATCH /vampires: reference/patch-media-operations.md
               - PUT /vampires: reference/put-media-operations.md
               - DELETE /vampires: reference/delete-media-operations.md
-      - Special Powers: reference/specialpowers.md
+      - The /specialPowers resource:
+          - About the /specialPowers resource:
+              - /specialPowers resource overview: reference/about-specialpowers.md
+              - GET /specialPowers: reference/get-specialpower-operations.md
+              - POST /specialPowers: reference/post-specialpower-operations.md
+              - PATCH /specialPowers: reference/patch-specialpower-operations.md
+              - PUT /specialPowers: reference/put-specialpower-operations.md
+              - DELETE /specialPowers: reference/delete-specialpower-operations.md
       - Vampy Swagger: reference/vampy-api.md
 
 markdown_extensions:
