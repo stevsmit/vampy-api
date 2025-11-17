@@ -54,12 +54,12 @@ Use PATCH to update part of a resource, or PUT to replace the resource entirely.
 
 | Endpoint | Operation | Description | Example field updates |
 |----------|-----------|-------------|-----------------------|
-/vampires/{id} | PATCH | Update one or more fields on a vampire. | {"batMode": true} |
-/vampires/{id} | PUT |Replace a vampire object completely. |{"name":"Dracula","canFly":true,"batMode":true} |
-/media/{id} | PATCH | Update media fields. | {"title":"Blade II"} |
-/media/{id} |PUT |Replace media object entirely.| {"type":"movie","title":"Blade II","year":2002,"vampireId":7} |
-/specialPowers/{id} |PATCH |Update one or more fields of a power. |{"power":"Mind Control"} |
-/specialPowers/{id} |PUT | Replace a power object completely. {"power":"Invisibility","vampireId":4} |
+| /vampires/{id} | `PATCH` | Update one or more fields on a vampire. | {"batMode": true} |
+| /vampires/{id} | `PUT` |Replace a vampire object completely. |{"name":"Dracula","canFly":true,"batMode":true} |
+| /media/{id} | `PATCH` | Update media fields. | {"title":"Blade II"} |
+| /media/{id} |`PUT` |Replace media object entirely.| {"type":"movie","title":"Blade II","year":2002,"vampireId":7} |
+| /specialPowers/{id} |`PATCH` |Update one or more fields of a power. |{"power":"Mind Control"} |
+| /specialPowers/{id} |`PUT` | Replace a power object completely. | {"power":"Invisibility","vampireId":4} |
 
 ### Example request (PATCH /vampires/7)
 
