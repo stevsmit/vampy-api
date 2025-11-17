@@ -1,6 +1,6 @@
 # About the /media resource
 
-The /media resource represents a media appearance associated with a vampire in the Vampy API.
+The `/media` resource represents a media appearance associated with a vampire in the Vampy API.
 Each entry includes the title of the media, its release year, and a foreign key (`vampireId`)
 linking the appearance to a specific vampire.
 You can create, read, update, or delete media entries using the corresponding API endpoints.
