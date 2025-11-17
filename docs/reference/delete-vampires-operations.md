@@ -2,24 +2,24 @@
 
 Use the `DELETE` method to delete a `/vampire` resource.
 
-## DELETE /vampires/{id}
+## DELETE /vampires/{id} {delete-vampireid}
 
 Delete a vampire by its ID.
 
-### Parameters
+### Parameters {delete-vampireid-parameters}
 
 | Parameter | Description | Type |
 |---------|------|---------------|
 | **id** (_required_) | Unique ID of the vampire | integer |
 
-### Responses
+### Responses {delete-vampireid-responses}
 
 | HTTP Code | Description | Schema |
 |---------|------|---------------|
 | 200 | Vampire profile successfully deleted | Vampire object |
 | 404 | Vampire not found | ApiError |
 
-### Example command
+### Example command {delete-vampireid-example-command}
 
 ```bash
 curl -X DELETE http://{base_url}/vampires/1
