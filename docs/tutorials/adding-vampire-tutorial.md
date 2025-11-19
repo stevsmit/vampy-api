@@ -1,10 +1,14 @@
 # Tutorial: Creating a complete vampire profile
 
-This tutorial shows you how to use the `POST` method to add
-a new vampire entity to the database, along with their
-media appearance and special power.
+This tutorial demonstrates how to use the `POST` method to add a new vampire entity to the database, along with their media appearance and special power.
 
-This tutorial should take approximately 20 minutes.
+The goal of this tutorial is to show you how to:
+
+* Create a new vampire profile using the `/vampires` resource
+* Link a media appearance to the vampire using the `/media` resource
+* Assign a special power to the vampire using the `/specialPowers` resource
+
+This tutorial should take approximately 10 minutes.
 
 ## Prerequisites
 
@@ -114,3 +118,9 @@ the power *Enhanced Speed* to the `/specialPowers` resource. Include the `vampir
     ```
 
 ## Next steps
+
+Now that you understand how to create a complete vampire profile, you can:
+* Learn how to filter vampires by traits in the [Filtering Vampires by Trait](/docs/tutorials/filtering-vampires-trait.md) tutorial
+* Learn how to update vampire information in the [Updating Vampire Information](/docs/tutorials/updating-vampire-information.md) tutorial
+* Learn how to manage media appearances in the [Managing Media Appearances](/docs/tutorials/managing-media-appearances.md) tutorial
+* Review the [Reference documentation](/docs/reference/operations.md) for complete details on all API operations
