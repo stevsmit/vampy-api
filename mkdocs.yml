@@ -10,6 +10,11 @@ nav:
 
   - Tutorials:
       - Adding a Vampire: tutorials/adding-vampire-tutorial.md
+      - Filtering Vampires by Trait: tutorials/filtering-vampires-trait.md
+      - Updating Vampire Information: tutorials/updating-vampire-information.md
+      - Managing Media Appearances: tutorials/managing-media-appearances.md
+      - Working with Special Powers: tutorials/working-with-special-powers.md
+      - Removing Resources: tutorials/removing-resources.md
 
   - Reference:
       - Operations: reference/operations.md
@@ -25,10 +30,10 @@ nav:
           - About the /media resource:
               - /media resource overview: reference/about-media.md
               - GET /media: reference/get-media-operations.md
-              - POST /vampires: reference/post-media-operations.md
-              - PATCH /vampires: reference/patch-media-operations.md
-              - PUT /vampires: reference/put-media-operations.md
-              - DELETE /vampires: reference/delete-media-operations.md
+              - POST /media: reference/post-media-operations.md
+              - PATCH /media: reference/patch-media-operations.md
+              - PUT /media: reference/put-media-operations.md
+              - DELETE /media: reference/delete-media-operations.md
       - The /specialPowers resource:
           - About the /specialPowers resource:
               - /specialPowers resource overview: reference/about-specialpowers.md
