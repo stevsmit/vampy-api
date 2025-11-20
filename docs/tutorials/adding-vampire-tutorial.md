@@ -12,7 +12,7 @@ This tutorial should take approximately 10 minutes.
 
 ## Prerequisites
 
-* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](/docs/quickstart/getting-started.md).
+* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](../quickstart/getting-started.md).
 
 ## Procedure
 
@@ -120,7 +120,8 @@ the power *Enhanced Speed* to the `/specialPowers` resource. Include the `vampir
 ## Next steps
 
 Now that you understand how to create a complete vampire profile, you can:
-* Learn how to filter vampires by traits in the [Filtering Vampires by Trait](/docs/tutorials/filtering-vampires-trait.md) tutorial
-* Learn how to update vampire information in the [Updating Vampire Information](/docs/tutorials/updating-vampire-information.md) tutorial
-* Learn how to manage media appearances in the [Managing Media Appearances](/docs/tutorials/managing-media-appearances.md) tutorial
-* Review the [Reference documentation](/docs/reference/operations.md) for complete details on all API operations
+
+* Learn how to filter vampires by traits in the [Filtering Vampires by Trait](filtering-vampires-trait.md) tutorial
+* Learn how to update vampire information in the [Updating Vampire Information](updating-vampire-information.md) tutorial
+* Learn how to manage media appearances in the [Managing Media Appearances](managing-media-appearances.md) tutorial
+* Review the [Reference documentation](../reference/operations.md) for complete details on all API operations

@@ -12,7 +12,7 @@ This tutorial should take approximately 20 minutes.
 
 ## Prerequisites
 
-* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](/docs/quickstart/getting-started.md).
+* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](../quickstart/getting-started.md).
 
 * Basic familiarity with the `GET` method and query parameters.
 
@@ -224,7 +224,7 @@ http://localhost:3000/specialPowers?vampireId=1
 ## Next steps
 
 Now that you understand how to work with special powers, you can:
-* Learn how to remove resources in the [Removing Resources](/docs/tutorials/removing-resources.md) tutorial
-* Review the [Reference documentation](/docs/reference/about-specialpowers.md) for complete details on the `/specialPowers` resource
-* Learn how to update vampire profiles in the [Updating Vampire Information](/docs/tutorials/updating-vampire-information.md) tutorial
 
+* Learn how to remove resources in the [Removing Resources](removing-resources.md) tutorial
+* Review the [Reference documentation](../reference/about-specialpowers.md) for complete details on the `/specialPowers` resource
+* Learn how to update vampire profiles in the [Updating Vampire Information](updating-vampire-information.md) tutorial

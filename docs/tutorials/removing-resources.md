@@ -13,7 +13,7 @@ This tutorial should take approximately 10 minutes.
 
 ## Prerequisites
 
-* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](/docs/quickstart/getting-started.md).
+* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](../quickstart/getting-started.md).
 
 * Basic familiarity with the `GET` method to verify deletions.
 
@@ -199,6 +199,6 @@ curl -X GET http://localhost:3000/specialPowers
 
 Now that you understand how to remove resources, you have completed the full CRUD (Create, Read, Update, Delete) operations for all resources. You can:
 
-* Review the [Reference documentation](/docs/reference/operations.md) for a complete overview of all operations
-* Explore the [Swagger documentation](/docs/reference/vampy-api.md) for interactive API exploration
+* Review the [Reference documentation](../reference/operations.md) for a complete overview of all operations
+* Explore the [Swagger documentation](../reference/vampy-api.md) for interactive API exploration
 & Practice combining operations by creating, updating, and managing complete vampire profiles
