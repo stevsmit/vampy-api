@@ -12,7 +12,7 @@ This tutorial should take approximately 10 minutes.
 
 ## Prerequisites
 
-* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](/docs/quickstart/getting-started.md).
+* Confirm that the `json-server` app is running with the `vampy_db.json` database. For more information, see [Becoming _familiar_: Getting started with the Vampy API](../quickstart/getting-started.md).
 
 * Basic familiarity with the `GET` method and query parameters.
 
@@ -209,7 +209,6 @@ http://localhost:3000/media/5
 
 Now that you understand how to manage media appearances, you can:
 
-* Learn how to work with special powers in the [Working with Special Powers](/docs/tutorials/working-with-special-powers.md) tutorial
-* Learn how to remove resources in the [Removing Resources](/docs/tutorials/removing-resources.md) tutorial
-* Review the [Reference documentation](/docs/reference/about-media.md) for complete details on the `/media` resource
-
+* Learn how to work with special powers in the [Working with Special Powers](working-with-special-powers.md) tutorial
+* Learn how to remove resources in the [Removing Resources](removing-resources.md) tutorial
+* Review the [Reference documentation](../reference/about-media.md) for complete details on the `/media` resource

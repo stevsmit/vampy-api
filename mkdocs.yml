@@ -8,8 +8,9 @@ nav:
   - Getting started with the Vampy API:
       - quickstart/getting-started.md
 
-  - Tutorials:
-      - Adding a Vampire: tutorials/adding-vampire-tutorial.md
+  - Tutorials: 
+      - Overview: tutorials/tutorials-overview.md
+      - Creating a Complete Vampire Profile: tutorials/adding-vampire-tutorial.md
       - Filtering Vampires by Trait: tutorials/filtering-vampires-trait.md
       - Updating Vampire Information: tutorials/updating-vampire-information.md
       - Managing Media Appearances: tutorials/managing-media-appearances.md
