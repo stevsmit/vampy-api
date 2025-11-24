@@ -8,7 +8,7 @@ nav:
   - Getting started with the Vampy API:
       - quickstart/getting-started.md
 
-  - Tutorials: 
+  - CLI Tutorials: 
       - Overview: tutorials/tutorials-overview.md
       - Creating a Complete Vampire Profile: tutorials/adding-vampire-tutorial.md
       - Filtering Vampires by Trait: tutorials/filtering-vampires-trait.md
