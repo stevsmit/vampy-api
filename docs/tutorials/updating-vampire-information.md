@@ -18,8 +18,10 @@ This tutorial should take approximately 10 minutes.
 
 ## Understanding PATCH vs PUT
 
-- **PATCH**: Updates only the fields you specify, leaving other fields unchanged. Use this when you want to modify one or a few fields.
-- **PUT**: Replaces the entire resource with the new object. All fields must be provided. Use this when you want to completely replace a resource.
+| Method | Use case | Fields required | Behavior |
+|--------|----------|----------------|----------|
+| `PATCH` | Update one or more specific fields | Only fields you want to change | Partial update - other fields remain unchanged |
+| `PUT` | Replace entire resource | All required fields (`name`, `canFly`, `batMode`) | Complete replacement - missing fields may be lost |
 
 ## Procedure
 
@@ -38,10 +40,10 @@ This tutorial should take approximately 10 minutes.
 
     ```json
     {
-        "id": 7,
         "name": "Blade",
         "canFly": false,
         "batMode": false
+        "id": 7
     }
     ```
 
@@ -60,10 +62,10 @@ This tutorial should take approximately 10 minutes.
 
     ```json
     {
-        "id": 7,
         "name": "Blade",
         "canFly": false,
         "batMode": true
+        "id": 7
     }
     ```
 
@@ -83,10 +85,10 @@ This tutorial should take approximately 10 minutes.
 
     ```json
     {
-        "id": 7,
         "name": "Blade",
         "canFly": true,
         "batMode": true
+        "id": 7
     }
     ```
 
@@ -109,10 +111,10 @@ This tutorial should take approximately 10 minutes.
 
     ```json
     {
-        "id": 7,
         "name": "Blade",
         "canFly": false,
         "batMode": false
+        "id": 7
     }
     ```
 
@@ -122,13 +124,6 @@ This tutorial should take approximately 10 minutes.
     curl -X GET \
     http://localhost:3000/vampires/7
     </code></pre></div>
-
-## Key differences
-
-| Method | Use case | Fields required | Behavior |
-|--------|----------|----------------|----------|
-| `PATCH` | Update one or more specific fields | Only fields you want to change | Partial update - other fields remain unchanged |
-| `PUT` | Replace entire resource | All required fields (`name`, `canFly`, `batMode`) | Complete replacement - missing fields may be lost |
 
 ## Completion and validation
 

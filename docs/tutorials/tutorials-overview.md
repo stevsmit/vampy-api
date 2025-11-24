@@ -1,6 +1,6 @@
 # Tutorials Overview
 
-The Vampy API tutorials provide step-by-step, hands-on instructions for working with the API. Each tutorial focuses on specific operations and workflows to help you build practical skills.
+The Vampy API command-line interface (CLI) tutorials provide step-by-step, hands-on instructions for working with the API. Each tutorial focuses on specific operations and workflows to help you build practical skills.
 
 ## Prerequisites
 
