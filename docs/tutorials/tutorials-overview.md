@@ -2,6 +2,14 @@
 
 The Vampy API tutorials provide step-by-step, hands-on instructions for working with the API. Each tutorial focuses on specific operations and workflows to help you build practical skills.
 
+## Prerequisites
+
+All tutorials assume that you have:
+
+* The `json-server` app running with the `vampy_db.json` database. For setup instructions, see [Getting started with the Vampy API](../quickstart/getting-started.md).
+* Basic familiarity with REST APIs and HTTP methods
+* Access to a terminal and `curl` command-line tool
+
 ## Getting started
 
 If you're new to the Vampy API, we recommend starting with one of the following tutorials:
@@ -32,15 +40,6 @@ If you're new to the Vampy API, we recommend starting with one of the following 
 | Tutorial | Description | Operations covered |
 |----------|-------------|-------------------|
 | [Removing Resources](removing-resources.md) | Delete vampires, media, and special powers | `DELETE` for all resources |
-
-
-## Prerequisites
-
-All tutorials assume that you have:
-
-* The `json-server` app running with the `vampy_db.json` database. For setup instructions, see [Getting started with the Vampy API](../quickstart/getting-started.md).
-* Basic familiarity with REST APIs and HTTP methods
-* Access to a terminal and `curl` command-line tool
 
 ## Need help?
 
