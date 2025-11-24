@@ -170,16 +170,6 @@ This tutorial should take approximately 10 minutes.
 
     If you want to clean up orphaned resources, you would need to delete them separately or update their `vampireId` to reference a different vampire.
 
-## Best practices
-
-1. **Check dependencies first**: Before deleting a vampire, retrieve it with embedded resources to see what will be orphaned.
-
-2. **Clean up orphaned resources**: Consider deleting or reassigning associated media and special powers when deleting a vampire.
-
-3. **Use GET to verify**: Always verify deletions by attempting to retrieve the deleted resource.
-
-4. **Be cautious**: Deletions are permanent. In a production environment, you might want to implement soft deletes or backup strategies.
-
 ## Completion and validation
 
 Verify that all deletions were successful by listing the remaining resources:
