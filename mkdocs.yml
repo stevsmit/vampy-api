@@ -16,6 +16,12 @@ nav:
       - Managing Media Appearances: tutorials/managing-media-appearances.md
       - Working with Special Powers: tutorials/working-with-special-powers.md
       - Removing Resources: tutorials/removing-resources.md
+    
+  - Postman Tutorials:
+      - Overview: tutorials/postman-overview.md
+      - Creating a Vampire Profile in Postman: tutorials/creating-vampire-postman.md
+      - Retrieving Vampires by Trait in Postman: tutorials/retrieving-vampires-trait-postman.md
+      - Updating or Removing Vampires in Postman: tutorials/updating-removing-vampires-postman.md
 
   - Reference:
       - Operations: reference/operations.md

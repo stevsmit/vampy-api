@@ -1,9 +1,9 @@
 # Becoming _familiar_: Getting started with the Vampy API
 
-This tutorial guides new users through the essential steps required to
-run the Vampire Tracker API (Vampy API) locally using `json-server`.
-By the end of this tutorial, you will have the REST API running
-and accessible at `http://localhost:3000`.
+This tutorial guides new users through the essential steps required to run the Vampire Tracker API (Vampy API) locally using `json-server`, plus the optional setup for issuing requests through Postman. By the end you will have the REST API running at `http://localhost:3000` and, if despired, the Vampy Postman environment imported for GUI-based testing.
+
+> [! IMPORTANT]
+> Procedures throughout this documentation set use {base_url} as replaceable variable. If you follow the instructions in this guide, {base_url} will be replaced with `http://localhost:3000`.
 
 Expect this preparation to take about 20 minutes to complete.
 
@@ -126,3 +126,15 @@ The following procedure shows you how to make a test call to the Vampy API serve
     },
     ]
     ```
+
+## Importing the Postman environment
+
+If you prefer to issue requests from Postman instead of `curl`, import the bundled environment so the tutorials can reference ready-made variables.
+
+1. In your file explorer, locate the `postman` directory inside the cloned repository. It contains `vampy-api-local.postman_environment.json`.
+
+2. Open Postman and click the **Environments** icon (gear) next to the workspace selector.
+
+3. Click **Import**, select the `vampy-api-local.postman_environment.json` file, and confirm the import.
+
+5. Optional: Verify the environment by opening a new request tab and entering `{{baseUrl}}/vampires`. When you click **Send**, the request should resolve to `http://localhost:3000/vampires`.
