@@ -4,6 +4,20 @@ The Vampire Tracker API (Vampy API) is a small, focused REST API for exploring n
 
 Built on `json-server` for simplicity and easy local setup, the Vampy API lets you query detailed information about individual vampires, their special powers, and the media where they appear.
 
+## The Vampy data model at a glance
+
+The Vampy API exposes three primary, interconnected resources. Together they form a small graph you can query in many ways:
+
+- **`/vampires`** – Core vampire profiles, including name, traits, and identifiers used to join to other resources.
+- **`/media`** – Film, TV, books, and other appearances, each linked to a specific vampire via `vampireId`.
+- **`/specialPowers`** – Unique or notable abilities, also linked to vampires via `vampireId`.
+
+By combining these resources, you can answer questions like:
+
+- “Which powers does this vampire have?”
+- “In which movies has this vampire appeared?”
+- “Which vampires share a specific ability?”
+
 ## Why use the Vampy API?
 
 The Vampy API gives you:
@@ -22,27 +36,13 @@ Use these sections depending on where you are in your journey:
 | [**Tutorials**](tutorials/tutorials-overview.md)| Guided, task-based learning | Step‑by‑step flows like adding vampires, filtering by powers, and managing media. |
 | [**Reference**](reference/operations.md) | Looking up fields, endpoints, and behaviors | Resource schemas, endpoints, query parameters, filtering, sorting, and examples. |
 
-## The Vampy data model at a glance
-
-The Vampy API exposes three primary, interconnected resources. Together they form a small graph you can query in many ways:
-
-- **`/vampires`** – Core vampire profiles, including name, traits, and identifiers used to join to other resources.
-- **`/media`** – Film, TV, books, and other appearances, each linked to a specific vampire via `vampireId`.
-- **`/specialPowers`** – Unique or notable abilities, also linked to vampires via `vampireId`.
-
-By combining these resources, you can answer questions like:
-
-- “Which powers does this vampire have?”
-- “In which movies has this vampire appeared?”
-- “Which vampires share a specific ability?”
-
 ## Get started in a few minutes
 
 1. **Spin up the API** by following the [Getting started guide](quickstart/getting-started.md).
 2. **Make your first request** using your favorite HTTP client (for example, `GET /vampires`).
 3. **Explore deeper**:
-   - Browse the [Vampy API reference](reference/vampy-api.md) for endpoints and query options.
    - Work through the [tutorials](tutorials/tutorials-overview.md) to add, filter, and update vampires.
+   - Browse the [Vampy API reference](reference/vampy-api.md) for endpoints and query options.
 
 ## Ready to sink your teeth in?
 

@@ -64,7 +64,7 @@ This tutorial should take approximately 10 minutes.
     {
         "name": "Blade",
         "canFly": false,
-        "batMode": true
+        "batMode": true,
         "id": 7
     }
     ```
@@ -87,7 +87,7 @@ This tutorial should take approximately 10 minutes.
     {
         "name": "Blade",
         "canFly": true,
-        "batMode": true
+        "batMode": true,
         "id": 7
     }
     ```
@@ -113,17 +113,10 @@ This tutorial should take approximately 10 minutes.
     {
         "name": "Blade",
         "canFly": false,
-        "batMode": false
+        "batMode": false,
         "id": 7
     }
     ```
-
-6. Verify the update by retrieving the profile again:
-
-    <div class="highlight"><pre><code class="language-bash">
-    curl -X GET \
-    http://localhost:3000/vampires/7
-    </code></pre></div>
 
 ## Completion and validation
 

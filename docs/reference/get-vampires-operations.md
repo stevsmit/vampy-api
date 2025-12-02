@@ -1,6 +1,6 @@
 # GET /vampires references
 
-Use the `GET` method to retrieve information about the `/vampire` resource.
+Use the `GET` method to retrieve information about the `/vampires` resource.
 
 ## **GET /vampires** {get-vampire}
 
@@ -106,7 +106,7 @@ Retrieve a single vampire profile and embed all associated media appearances in 
 
 | HTTP Code | Description | Schema |
 |---------|------|---------------|
-| 200 | Vampire profile with embedded special powers |Vampire object with `specialPowers` array |
+| 200 | Vampire profile with embedded media |Vampire object with `media` array |
 | 404 | Vampire not found | ApiError |
 
 ### Example command {get-vampire-media-example-command}

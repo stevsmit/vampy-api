@@ -17,8 +17,7 @@ All fields are required — the existing object will be fully overwritten.
 
 | Field | Description | Type |
 |---------|------|---------------|
-| name | The name of the special power. | string |
-| description | A short description of the power. | string |
+| power | The name of the special power. | string |
 | vampireId | The ID of the vampire who possesses the power. | integer |
 
 ### Responses
@@ -35,8 +34,7 @@ All fields are required — the existing object will be fully overwritten.
 curl -X PUT \
   -H "Content-Type: application/json" \
   -d '{
-        "name": "Shadowmeld",
-        "description": "Allows the vampire to completely vanish in darkness.",
+        "power": "Shadowmeld",
         "vampireId": 1
       }' \
   http://{base_url}/specialPowers/3

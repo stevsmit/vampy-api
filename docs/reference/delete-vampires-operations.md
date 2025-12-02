@@ -1,6 +1,6 @@
 # DELETE /vampires references
 
-Use the `DELETE` method to delete a `/vampire` resource.
+Use the `DELETE` method to delete a `/vampires` resource.
 
 ## DELETE /vampires/{id} {delete-vampireid}
 
