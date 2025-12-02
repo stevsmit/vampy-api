@@ -191,4 +191,4 @@ Now that you understand how to remove resources, you have completed the full CRU
 
 * Review the [Reference documentation](../reference/operations.md) for a complete overview of all operations
 * Explore the [Swagger documentation](../reference/vampy-api.md) for interactive API exploration
-& Practice combining operations by creating, updating, and managing complete vampire profiles
+* Practice combining operations by creating, updating, and managing complete vampire profiles

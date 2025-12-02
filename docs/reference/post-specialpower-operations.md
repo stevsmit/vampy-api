@@ -10,8 +10,7 @@ Create a new special power entry.
 
 | Parameter | Description | Type |
 |---------|------|---------------|
-| name _(required)_ | The name of the special power. | string |
-| description _(required)_ | A short description of the power. | string |
+| power _(required)_ | The name of the special power. | string |
 | vampireId _(required)_ | The ID of the vampire who has this power. | integer |
 
 ### Responses
@@ -27,8 +26,7 @@ Create a new special power entry.
 curl -X POST \
   -H "Content-Type: application/json" \
   -d '{
-        "name": "Shadow Walk",
-        "description": "Allows the vampire to move unseen through darkness.",
+        "power": "Shadow Walk",
         "vampireId": 1
       }' \
   http://{base_url}/specialPowers

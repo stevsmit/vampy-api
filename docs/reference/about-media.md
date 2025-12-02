@@ -22,7 +22,7 @@ You can create, read, update, or delete media entries using the corresponding AP
 |`GET /media` | Retrieve a list of all media entries. |
 |`GET /media/{id}` | Retrieve a single media entry by its `id`. |
 |`GET /media?vampireId={id}` | Retrieve all media entries linked to a specific vampire. |
-|`POST /media` | Retrieve a vampire profile along with its assigned special powers. |
+|`POST /media` | Create a new media entry. |
 |`PATCH /media/{id}` | Update one or more fields of an existing media entry. |
 |`PUT /media/{id}` | Replace an existing media entry with a new object (all fields required). |
 | `DELETE /media/{id}` | Delete a media entry. |

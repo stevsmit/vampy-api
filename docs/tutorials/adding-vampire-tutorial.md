@@ -85,7 +85,7 @@ the power *Enhanced Speed* to the `/specialPowers` resource. Include the `vampir
     ```json
     {
     "power": "Enhanced Speed",
-    "vampireId": 9,
+    "vampireId": 8,
     "id": 8
     }
     ```
@@ -106,11 +106,11 @@ the power *Enhanced Speed* to the `/specialPowers` resource. Include the `vampir
     "name": "Edward Cullen",
     "canFly": false,
     "batMode": false,
-    "id": 9,
+    "id": 8,
     "specialPowers": [
         {
         "power": "Enhanced Speed",
-        "vampireId": 9,
+        "vampireId": 8,
         "id": 8
         }
     ]

@@ -1,6 +1,6 @@
 # POST /vampires references
 
-Use the `POST` method to create a new `/vampire` resource.
+Use the `POST` method to create a new `/vampires` resource.
 
 ## POST /vampires
 

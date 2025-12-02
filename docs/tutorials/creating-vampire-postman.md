@@ -36,7 +36,7 @@ This tutorial should take approximately 5 minutes.
 
 ## Completion and validation
 
-1. In Postman, wwitch to a `GET {baseUrl}/vampires/{lastVampireId}` request.
+1. In Postman, switch to a `GET {baseUrl}/vampires/{lastVampireId}` request.
 2. Click **Send** to confirm the vampire you created now exists.
 3. Check the response body to ensure `name`, `canFly`, and `batMode` match your input.
 
