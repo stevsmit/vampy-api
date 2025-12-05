@@ -138,6 +138,6 @@ If you prefer to issue requests from Postman instead of `curl`, import the bundl
 
 3. Click **Import**, select the `vampy-api-local.postman_environment.json` file, and confirm the import.
 
-4. On the **Environements** tab, click **Set Active** to activate the Vampy API workspace.
+4. On the **Environment** tab, click **Set Active** to activate the Vampy API workspace.
 
 5. Optional: Verify the environment by opening a new request tab and entering `{{baseUrl}}/vampires`. When you click **Send**, the request should resolve to `http://localhost:3000/vampires`.
